@@ -19,14 +19,40 @@
 	font-family: 'Poppins', sans-serif;
 	color: var(--color-text);
 }
-
+footer {
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    background-color:var(--color-bg);
+    text-align:center;
+/*    height:5vh;*/
+    font-size:15px;
+    font-style:italic;
+    color:#888888;
+}
 body {
-	background-color: var(--color-bg);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    margin-bottom:2%;
+/*	height: 95vh;*/
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 header {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
 
@@ -53,10 +79,16 @@ header h1 {
 }
 
 .form-item input {
-	width: 60px;
+	width: 90px;
+    height:40px;
 	margin-left: 15px;
 	margin-right: 10px;
-	color: #000;
+	color: #0f7a23;
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+    border-radius:5px;
+    border:none;
 }
 
 .form-item input[type='range'] {
@@ -69,10 +101,12 @@ header h1 {
 
 .btn {
 	margin: 10px;
-	padding: 5px;
+	padding: 15px 40px 15px 40px;
+    font-weight:bold;
+    font-size:15px;
 	border-radius: 5px;
-	background-color: var(--color-btn);
-	border: 1px solid var(--color-btn-border);
+	background-color: rgb(177,55,77);
+	border: none;
 }
 
 .btn:hover {
@@ -101,14 +135,14 @@ header h1 {
 	margin: 2px 5px 2px 5px;
 	display: inline-block;
 	background-color: var(--color-open);
-	border: 1px solid var(--color-open);
-	border-radius: 3px;
+	border: none;
+	border-radius: 5px;
 	cursor: pointer;
 }
 
 .cell:hover,
 .cell.barrier {
-	border: 1px solid var(--color-close);
+	border: none;
 }
 
 .img-container {

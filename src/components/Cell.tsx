@@ -3,9 +3,9 @@ import React from 'react';
 // open, closed, tempPath, path, face
 // const states = [0, 1, 2, 3, 4]
 
-export const COLOR_CLOSED = '#f05454';
+export const COLOR_CLOSED = '#964B00';
 export const COLOR_OPEN = '#e8e8e8';
-export const COLOR_TEMP_PATH = '#3cc4fe';
+export const COLOR_TEMP_PATH = '#fef13c';
 export const COLOR_PATH = '#3ccf4e';
 export const COLOR_FACE = '#ffff00';
 
@@ -37,7 +37,7 @@ function getStyle(state, mazeSize) {
 		// state temp path
 		return {
 			backgroundColor: COLOR_TEMP_PATH,
-			border: `1px solid ${COLOR_TEMP_PATH}`,
+			border: `none`,
 			width: cellSize,
 			height: cellSize,
 		};
@@ -45,7 +45,7 @@ function getStyle(state, mazeSize) {
 		// state path
 		return {
 			backgroundColor: COLOR_PATH,
-			border: `1px solid ${COLOR_PATH}`,
+			border: `none`,
 			width: cellSize,
 			height: cellSize,
 		};
@@ -53,7 +53,7 @@ function getStyle(state, mazeSize) {
 		// state face
 		return {
 			backgroundColor: COLOR_FACE,
-			border: `1px solid ${COLOR_FACE}`,
+			border: `none`,
 			width: cellSize,
 			height: cellSize,
 		};
@@ -71,7 +71,7 @@ function getCellDOM(x, y, mazeSize) {
 	else if (y === mazeSize - 1 && x === mazeSize - 1)
 		cellDom = (
 			<div className="img-container">
-				<img src="cheese.png" alt="cheese" />
+				<img src="download.jpeg" alt="cheese" />
 			</div>
 		);
 

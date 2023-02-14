@@ -1,14 +1,15 @@
 import React from 'react';
 
-const [minSize, maxSize, stepSize] = [3, 8, 1];
-const [minSpeed, maxSpeed, stepSpeed] = [50, 500, 50];
+const [minSize, maxSize, stepSize] = [3, 9, 1];
+//const [minSpeed, maxSpeed, stepSpeed] = [50, 500, 50];
 
 export default function InputForm(props) {
-	const { updateMaze, updateMazeSize, startVis, setSpeed } = props;
+    const { updateMaze, updateMazeSize, startVis} = props;
+    {/*Add this next to startVis setSpeed*/}
 
 	const [ifRunning, changeIfRunning] = React.useState(false);
 	const [inputMazeSize, setInputMazeSize] = React.useState(5);
-	const [inputSpeed, setInputSpeed] = React.useState(200);
+	//const [inputSpeed, setInputSpeed] = React.useState(300);
 
 	const updateMazeEL = function (e) {
 		const newMazeSize = Math.max(minSize, Math.min(maxSize, +e.target.value));
@@ -24,10 +25,10 @@ export default function InputForm(props) {
 		});
 	};
 
-	const updateSpeedEL = function (e) {
-		setSpeed(+e.target.value);
-		setInputSpeed(+e.target.value);
-	};
+    {/*const updateSpeedEL = function (e) {
+        setSpeed(+e.target.value);
+        setInputSpeed(+e.target.value);
+    };*/}
 
 	const btnStart = async function () {
 		changeIfRunning(true);
@@ -48,24 +49,22 @@ export default function InputForm(props) {
 					onChange={updateMazeEL}
 					disabled={ifRunning ? true : false}
 				/>
-				<span>
-					{inputMazeSize} × {inputMazeSize}
-				</span>
+
 			</div>
 
-			<div className="form-item">
-				<label>Speed:</label>
-				<input
-					type="range"
-					step={stepSpeed}
-					min={minSpeed}
-					max={maxSpeed}
-					onChange={updateSpeedEL}
-					value={inputSpeed}
-					disabled={ifRunning ? true : false}
-				/>
-				<span>{inputSpeed} ms</span>
-			</div>
+            {/*<div className="form-item">
+                <label>Speed:</label>
+                <input
+                    type="range"
+                    step={stepSpeed}
+                    min={minSpeed}
+                    max={maxSpeed}
+                    onChange={updateSpeedEL}
+                    value={inputSpeed}
+                    disabled={ifRunning ? true : false}
+                />
+                <span>{inputSpeed} ms</span>
+        </div>*/}
 
 			<div className="form-item">
 				<button
@@ -77,9 +76,13 @@ export default function InputForm(props) {
 				</button>
 
 				<button className="btn" onClick={btnReload}>
-					Reload
+					Reset
 				</button>
+
 			</div>
+            <span>
+                Maze Dimension: {inputMazeSize} × {inputMazeSize}
+            </span>
 		</div>
 	);
 }

@@ -6,7 +6,7 @@ import InputForm from './components/InputForm';
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 export default function App() {
-	const [speed, setSpeed] = React.useState(200);
+	const [speed, setSpeed] = React.useState(400);
 	const [mazeSize, updateMazeSize] = React.useState(5);
 	const [maze, updateMaze] = React.useState([
 		[0, 0, 0, 0, 0],
@@ -68,7 +68,7 @@ export default function App() {
 	return (
 		<div className="main">
 			<header>
-				<h1>Rat in a Maze - Visualization</h1>
+				<h1>Maze Pathfinder for Rat</h1>
 				<p>Click the boxes to add barriers</p>
 			</header>
 			<InputForm
@@ -77,7 +77,7 @@ export default function App() {
 				startVis={startVis}
 				setSpeed={setSpeed}
 			/>
-			<Maze mazeSize={mazeSize} maze={maze} updateMaze={updateMaze} />
+        <Maze mazeSize={mazeSize} maze={maze} updateMaze={updateMaze} />
 		</div>
 	);
 }
