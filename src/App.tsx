@@ -66,10 +66,12 @@ export default function App() {
 	};
 
 	return (
+
 		<div className="main">
+
 			<header>
 				<h1>Maze Pathfinder for Rat</h1>
-				<p>Click the boxes to add barriers</p>
+                {/*<p>Click the boxes to add barriers</p>*/}
 			</header>
 			<InputForm
 				updateMazeSize={updateMazeSize}

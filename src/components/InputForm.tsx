@@ -48,6 +48,7 @@ export default function InputForm(props) {
 					max={maxSize}
 					onChange={updateMazeEL}
 					disabled={ifRunning ? true : false}
+                    autoFocus
 				/>
 
 			</div>
