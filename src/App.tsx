@@ -70,9 +70,12 @@ export default function App() {
 		<div className="main">
 
 			<header>
-				<h1>Maze Pathfinder for Rat</h1>
+				<h1>Pathfinder for Rat</h1>
                 {/*<p>Click the boxes to add barriers</p>*/}
-			</header>
+                <h3>Objective: To find most optimal path for the Rat to reach its home.</h3>
+
+            </header>
+
 			<InputForm
 				updateMazeSize={updateMazeSize}
 				updateMaze={updateMaze}
