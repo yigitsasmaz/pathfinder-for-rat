@@ -1,5 +1,5 @@
 {
-  "name": "rat-in-a-maze",
+  "name": "pathfinder-for-rat-tushar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
