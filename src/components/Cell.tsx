@@ -1,5 +1,4 @@
 import React from 'react';
-import Background from './rat.png';
 // open, closed, tempPath, path, face
 // const states = [0, 1, 2, 3, 4]
 
@@ -48,7 +47,6 @@ function getStyle(state, mazeSize) {
 			border: `none`,
 			width: cellSize,
             height: cellSize,
-            backgroundImage: `url(${Background})`,
 		};
 	else if (state === 4)
 		// state face
