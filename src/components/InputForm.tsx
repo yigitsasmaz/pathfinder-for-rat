@@ -40,7 +40,7 @@ export default function InputForm(props) {
 	return (
 		<div className="input-form">
 			<div className="form-item">
-				<label>Enter the maze size:</label>
+				<label>Enter the room dimension:</label>
 				<input
 					type="number"
 					step={stepSize}
@@ -82,7 +82,7 @@ export default function InputForm(props) {
 
 			</div>
             <span>
-                Maze Dimension: {inputMazeSize} × {inputMazeSize}
+                Room Dimension: {inputMazeSize} × {inputMazeSize}
             </span>
 		</div>
 	);

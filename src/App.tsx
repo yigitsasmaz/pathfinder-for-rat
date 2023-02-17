@@ -72,7 +72,6 @@ export default function App() {
 			<header>
 				<h1>Pathfinder for Rat</h1>
                 {/*<p>Click the boxes to add barriers</p>*/}
-                <h3>Objective: To find most optimal path for the Rat to reach its home.</h3>
 
             </header>
 
