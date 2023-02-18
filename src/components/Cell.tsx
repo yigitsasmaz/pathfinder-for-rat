@@ -4,7 +4,7 @@ import React from 'react';
 
 export const COLOR_CLOSED = '#964B00';
 export const COLOR_OPEN = '#e8e8e8';
-export const COLOR_TEMP_PATH = '#fef13c';
+export const COLOR_TEMP_PATH = '#fc9003';
 export const COLOR_PATH = '#3ccf4e';
 export const COLOR_FACE = '#ffff00';
 
