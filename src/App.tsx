@@ -71,7 +71,7 @@ export default function App() {
 
 			<header>
 				<h1>Pathfinder for Rat</h1>
-                {/*<p>Click the boxes to add barriers</p>*/}
+                <p><b>Click the boxes to add barriers</b></p>
 
             </header>
 
