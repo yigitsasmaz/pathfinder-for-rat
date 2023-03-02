@@ -1,5 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/10279696-dee9-4876-a5ae-627171c82098/deploy-status)](https://app.netlify.com/sites/pathfinderforrat-tushar/deploys)
-
+![Deploy to Firebase Hosting on merge](https://github.com/tushar-prabhu/pathfinder-for-rat/actions/workflows/firebase-hosting-merge.yml/badge.svg)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
